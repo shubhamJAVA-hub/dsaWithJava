@@ -7,7 +7,8 @@ public class FindSecondLargestNumber {
             throw new IllegalArgumentException("Invalid Input");
         }
         int largest = FindLargestNumber.largestNumber(arr);
-        int secondLargest = arr[0];
+        System.out.println("Largest number in given array is: "+ largest);
+        int secondLargest = Integer.MIN_VALUE;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > secondLargest && largest > arr[i]){
                 secondLargest = arr[i];
@@ -15,5 +16,9 @@ public class FindSecondLargestNumber {
         }
 
         return secondLargest;
+    }
+    public static void main(String[] args) {
+        int[] arr = {3,5,2,6,4,8,10};
+        System.out.println("The second largest number in given array is: "+ secondLargestNumber(arr));
     }
 }
