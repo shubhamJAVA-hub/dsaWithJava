@@ -3,6 +3,7 @@ package com.shubham.Array;
 import java.util.Arrays;
 
 public class SortTheArrayOf012 {
+    // 2nd approach
     private static int[] sort123(int[] a){
         int l = 0;
         int m = 0;
@@ -26,6 +27,7 @@ public class SortTheArrayOf012 {
         }
         return a;
     }
+    //1st approach
     private static int[] doSort(int[] arr) {
         int cnt0 = 0;
         int cnt1 = 0;
