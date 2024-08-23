@@ -4,7 +4,7 @@ import java.util.PriorityQueue;
 
 public class KthLargestElement {
 
-    public static int kthLargest(int arr[], int k)
+    public static int kthLargest(int[] arr, int k)
     {
         // Create a min heap
         PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
@@ -14,7 +14,7 @@ public class KthLargestElement {
             // add all elements into the min heap
             pq.add(arr[i]);
 
-            // If size of the priority queue exceeds k, remove the top(min) elements from the pq
+            // If size of the priority queue(pq) exceeds k, remove the top(min) element from pq
             if (pq.size() > k) {
                 pq.poll();
             }
